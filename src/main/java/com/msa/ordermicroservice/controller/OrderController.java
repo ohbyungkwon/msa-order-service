@@ -21,7 +21,6 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class OrderController {
     private final OrderService orderService;
-    private final CustomRestTemplate restTemplate;
 
     @GetMapping("/order")
     public ResponseEntity<ResponseComDto> searchOrder(@RequestParam String userId, Pageable pageable) throws Exception{
